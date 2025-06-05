@@ -40,6 +40,26 @@
       "displayName": "Startpage",
       "shortcut": "s",
       "urlTemplate": "https://www.startpage.com/do/search?q=%s"
+    },
+    {
+      "displayName": "ChatGPT",
+      "shortcut": "c",
+      "urlTemplate": "https://chatgpt.com/?q=%s"
+    },
+    {
+      "displayName": "Perplexity",
+      "shortcut": "p",
+      "urlTemplate": "https://www.perplexity.ai/?q=%s"
+    },
+    {
+      "displayName": "Wolfram Alpha",
+      "shortcut": "w",
+      "urlTemplate": "https://www.wolframalpha.com/input/?i=%s"
+    },
+    {
+      "displayName": "Andi search",
+      "shortcut": "a",
+      "urlTemplate": "https://andisearch.com?q=%s"
     }
   ]
 }
