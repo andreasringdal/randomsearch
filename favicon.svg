@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background circle -->
+    <circle cx="16" cy="16" r="15" fill="#007bff"/>
+    
+    <!-- Search magnifying glass -->
+    <path d="M14 8a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" fill="white"/>
+    <path d="M20.5 20.5l4 4" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Random element (dice) -->
+    <circle cx="22" cy="10" r="2" fill="white" opacity="0.8"/>
+</svg> 
