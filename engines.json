@@ -1,0 +1,45 @@
+{
+  "engines": [
+    {
+      "displayName": "Google",
+      "shortcut": "g",
+      "urlTemplate": "https://www.google.com/search?q=%s"
+    },
+    {
+      "displayName": "Bing",
+      "shortcut": "b",
+      "urlTemplate": "https://www.bing.com/search?q=%s"
+    },
+    {
+      "displayName": "Brave Search",
+      "shortcut": "br",
+      "urlTemplate": "https://search.brave.com/search?q=%s"
+    },
+    {
+      "displayName": "DuckDuckGo",
+      "shortcut": "d",
+      "urlTemplate": "https://duckduckgo.com/?q=%s"
+    },
+    {
+      "displayName": "Ecosia",
+      "shortcut": "e",
+      "urlTemplate": "https://www.ecosia.org/search?q=%s"
+    },
+    {
+      "displayName": "Qwant",
+      "shortcut": "q",
+      "urlTemplate": "https://www.qwant.com/?q=%s"
+    },
+    {
+      "displayName": "Kagi",
+      "shortcut": "k",
+      "urlTemplate": "https://kagi.com/?q=%s"
+    },
+    
+    {
+      "displayName": "Startpage",
+      "shortcut": "s",
+      "urlTemplate": "https://www.startpage.com/do/search?q=%s"
+    }
+  ]
+}
