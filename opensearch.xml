@@ -1,17 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+<OpenSearchDescription
+  xmlns="http://a9.com/-/spec/opensearch/1.1/"
+  xmlns:moz="http://www.mozilla.org/2006/browser/search/">
     <ShortName>Random Search</ShortName>
     <Description>Random Search - A privacy-focused search engine that randomly selects from multiple search providers</Description>
-    <Tags>search  random</Tags>
-    <Contact>https://github.com/yourusername/randomsearch</Contact>
-    <Url type="text/html" template="https://andreasringdal.github.io/randomsearch/?q={searchTerms}"/>
-    <LongName>Random Search Engine</LongName>
-    <Image height="16" width="16" type="image/x-icon">https://andreasringdal.github.io/randomsearch/favicon.svg</Image>
-    <Query role="example" searchTerms="test search"/>
-    <Developer>Andreas Ringdal</Developer>
-    <SyndicationRight>open</SyndicationRight>
-    <AdultContent>false</AdultContent>
-    <Language>en-us</Language>
-    <OutputEncoding>UTF-8</OutputEncoding>
     <InputEncoding>UTF-8</InputEncoding>
+    <Image height="16" width="16" type="image/x-icon">https://andreasringdal.github.io/randomsearch/favicon.svg</Image>
+    <Url type="text/html" template="https://andreasringdal.github.io/randomsearch/?q={searchTerms}"/>
 </OpenSearchDescription> 
