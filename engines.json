@@ -70,12 +70,6 @@
       "displayName": "Mistral",
       "shortcut": "Mistral",
       "urlTemplate": "https://chat.mistral.ai/chat?q=%s"
-    }
-    /*, Only available in the US
-    {
-        "displayName": "Google AI search",
-        "shortcut": "gai",
-        "urlTemplate": "https://www.google.com/search?udm=50&source=searchlabs&q=%s"      
-    }*/
+    }   
   ]
 }
