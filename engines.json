@@ -34,13 +34,7 @@
       "displayName": "Qwant",
       "shortcut": "q",
       "urlTemplate": "https://www.qwant.com/?q=%s"
-    },
-    /*{
-      "displayName": "Kagi",
-      "shortcut": "k",
-      "urlTemplate": "https://kagi.com/?q=%s"
-    },*/
-    
+    },    
     {
       "displayName": "Startpage",
       "shortcut": "s",
