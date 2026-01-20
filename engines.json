@@ -64,6 +64,16 @@
       "displayName": "Mistral",
       "shortcut": "Mistral",
       "urlTemplate": "https://chat.mistral.ai/chat?q=%s"
+    } ,
+    {
+      "displayName": "mwmbl",
+      "shortcut": "mwmbl",
+      "urlTemplate": "https://mwmbl.org/?q=%s"
+    } ,
+    {
+      "displayName": "Margnalia",
+      "shortcut": "Margnalia",
+      "urlTemplate": "https://marginalia-search.com/search?query=&s&newfilter=true"
     }   
   ]
 }
