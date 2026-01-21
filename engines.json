@@ -76,9 +76,9 @@
       "urlTemplate": "https://marginalia-search.com/search?query=&s&newfilter=true"
     }  ,
     {
-      "displayName": "SearXNG (rhscz.eu)",
+      "displayName": "SearXNG (Random)",
       "shortcut": "SearXNG",
-      "urlTemplate": "https://search.rhscz.eu/search?q=%s"
+      "urlTemplate": "https://searx.neocities.org/?q=%s"
     }   
     
   ]
