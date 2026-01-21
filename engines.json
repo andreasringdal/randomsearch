@@ -74,6 +74,12 @@
       "displayName": "Margnalia",
       "shortcut": "Margnalia",
       "urlTemplate": "https://marginalia-search.com/search?query=&s&newfilter=true"
+    }  ,
+    {
+      "displayName": "SearXNG (rhscz.eu)",
+      "shortcut": "SearXNG",
+      "urlTemplate": "https://search.rhscz.eu/search?q=%s"
     }   
+    
   ]
 }
