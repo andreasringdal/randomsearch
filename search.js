@@ -45,8 +45,7 @@ function wasPromptedToday() {
     return last === new Date().toISOString().split('T')[0];
 }
 function markPromptedToday() {
-    storageSet(STORAGE_KEYS.LAST_NEW_ENGINE_PROMPT, new Date().toISOStri
-ng().split('T')[0]);
+    storageSet(STORAGE_KEYS.LAST_NEW_ENGINE_PROMPT, new Date().toISOString().split('T')[0]);
 }
 // ---- Engine loading ----
 async function loadSearchEngines() {
@@ -103,15 +102,13 @@ ed + '>' +
 }
 function getCheckedValues(containerId) {
     return Array.from(
-        document.querySelectorAll('#' + containerId + ' input[type="chec
-kbox"]:checked')
+        document.querySelectorAll('#' + containerId + ' input[type="checkbox"]:checked')
     ).map(function(cb) { return cb.value; });
 }
 function populateDropdown() {
     var dropdown = document.getElementById('engineDropdown');
     dropdown.innerHTML = allEngines.map(function(e) {
-        return '<button type="button" class="dropdown-item" role="menuit
-em" data-shortcut="' + e.shortcut + '">' +
+        return '<button type="button" class="dropdown-item" role="menuitem" data-shortcut="' + e.shortcut + '">' +
             '<span>' + e.displayName + '</span>' +
             '<span class="shortcut">!' + e.shortcut + '</span>' +
             '</button>';
@@ -119,16 +116,13 @@ em" data-shortcut="' + e.shortcut + '">' +
 }
 // ---- Search flow ----
 function executeSearch(query, specificEngine) {
-    var enabledShortcuts = getEnabledEngines() || allEngines.map(functio
-n(e) { return e.shortcut; });
-    var enabledEngines = allEngines.filter(function(e) { return enabledS
-hortcuts.includes(e.shortcut); });
+    var enabledShortcuts = getEnabledEngines() || allEngines.map(function(e) { return e.shortcut; });
+    var enabledEngines = allEngines.filter(function(e) { return enabledShortcuts.includes(e.shortcut); });
     var selectedEngine = specificEngine || null;
     if (!selectedEngine && query.startsWith('!')) {
         var shortcut = query.substring(1).split(' ')[0];
         var remainingQuery = query.substring(shortcut.length + 2);
-        selectedEngine = getSearchEngineByShortcut(allEngines, shortcut)
-;
+        selectedEngine = getSearchEngineByShortcut(allEngines, shortcut);
         if (selectedEngine) {
             query = remainingQuery;
         }
@@ -178,8 +172,7 @@ function openSettingsModal(isFirstTime) {
     title.textContent = isFirstTime
         ? 'Welcome! Configure Your Search Engines'
         : 'Configure Search Engines';
-    var enabled = getEnabledEngines() || allEngines.map(function(e) { re
-turn e.shortcut; });
+    var enabled = getEnabledEngines() || allEngines.map(function(e) { return e.shortcut; });
     renderEngineCheckboxes('engineList', allEngines, enabled);
     showModal('settingsOverlay');
 }
@@ -202,15 +195,13 @@ function closeSettings() {
 // ---- New engines modal ----
 function openNewEnginesModal(newEngines) {
     markPromptedToday();
-    renderEngineCheckboxes('newEngineList', newEngines, newEngines.map(f
-unction(e) { return e.shortcut; }));
+    renderEngineCheckboxes('newEngineList', newEngines, newEngines.map(function(e) { return e.shortcut; }));
     showModal('newEnginesOverlay');
 }
 function saveNewEngines() {
     var enabled = getEnabledEngines() || [];
     var known = getKnownEngines() || [];
-    document.querySelectorAll('#newEngineList input[type="checkbox"]').f
-orEach(function(cb) {
+    document.querySelectorAll('#newEngineList input[type="checkbox"]').forEach(function(cb) {
         if (!known.includes(cb.value)) {
             known.push(cb.value);
         }
@@ -261,36 +252,26 @@ async function init() {
         attemptSearch(query, engine);
     });
     // Settings modal
-    document.getElementById('openSettings').addEventListener('click', fu
-nction(e) {
+    document.getElementById('openSettings').addEventListener('click', function(e) {
         e.preventDefault();
-        if (document.getElementById('settingsOverlay').classList.contain
-s('active')) return;
+        if (document.getElementById('settingsOverlay').classList.contains('active')) return;
         openSettingsModal(false);
     });
-    document.getElementById('saveSettings').addEventListener('click', sa
-veSettings);
-    document.getElementById('settingsClose').addEventListener('click', c
-loseSettings);
-    document.getElementById('settingsCancel').addEventListener('click',
-closeSettings);
-    document.getElementById('selectAll').addEventListener('click', funct
-ion() {
+    document.getElementById('saveSettings').addEventListener('click', saveSettings);
+    document.getElementById('settingsClose').addEventListener('click', closeSettings);
+    document.getElementById('settingsCancel').addEventListener('click',closeSettings);
+    document.getElementById('selectAll').addEventListener('click', function() {
         document.querySelectorAll('#engineList input[type="checkbox"]').
-forEach(function(cb) { cb.checked = true; });
+        forEach(function(cb) { cb.checked = true; });
     });
-    document.getElementById('deselectAll').addEventListener('click', fun
-ction() {
+    document.getElementById('deselectAll').addEventListener('click', function() {
         document.querySelectorAll('#engineList input[type="checkbox"]').
-forEach(function(cb) { cb.checked = false; });
+        forEach(function(cb) { cb.checked = false; });
     });
     // New engines modal
-    document.getElementById('saveNewEngines').addEventListener('click',
-saveNewEngines);
-    document.getElementById('newEnginesClose').addEventListener('click',
- dismissNewEngines);
-    document.getElementById('dismissNewEngines').addEventListener('click
-', dismissNewEngines);
+    document.getElementById('saveNewEngines').addEventListener('click',saveNewEngines);
+    document.getElementById('newEnginesClose').addEventListener('click', dismissNewEngines);
+    document.getElementById('dismissNewEngines').addEventListener('click', dismissNewEngines);
     // Form submission
     searchForm.addEventListener('submit', function(e) {
         e.preventDefault();
