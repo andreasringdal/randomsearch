@@ -90,11 +90,9 @@ function renderEngineCheckboxes(containerId, engines, checkedShortcuts)
 {
     var container = document.getElementById(containerId);
     container.innerHTML = engines.map(function(e) {
-        var checked = checkedShortcuts.includes(e.shortcut) ? 'checked'
-: '';
+        var checked = checkedShortcuts.includes(e.shortcut) ? 'checked': '';
         return '<label class="engine-item">' +
-            '<input type="checkbox" value="' + e.shortcut + '" ' + check
-ed + '>' +
+            '<input type="checkbox" value="' + e.shortcut + '" ' + checked + '>' +
             '<span class="engine-name">' + e.displayName + '</span>' +
             '<span class="engine-shortcut">!' + e.shortcut + '</span>' +
             '</label>';
