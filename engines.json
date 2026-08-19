@@ -1,0 +1,19 @@
+{
+  "engines": [
+    {
+      "id": "mwbl",
+      "name": "Mwbl",
+      "defaultSelected": false
+    },
+    {
+      "id": "Margnalia",
+      "name": "Margnalia",
+      "defaultSelected": false
+    },
+    {
+      "id": "SearXNG",
+      "name": "SearXNG",
+      "defaultSelected": false
+    }
+  ]
+}
