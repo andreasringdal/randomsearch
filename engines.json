@@ -68,17 +68,20 @@
     {
       "displayName": "mwmbl",
       "shortcut": "mwmbl",
-      "urlTemplate": "https://mwmbl.org/?q=%s"
-    } ,
+      "urlTemplate": "https://mwmbl.org/?q=%s",
+      "defaultSelected": false
+    },
     {
       "displayName": "Margnalia",
       "shortcut": "Margnalia",
-      "urlTemplate": "https://marginalia-search.com/search?query=&s&newfilter=true"
-    }  ,
+      "urlTemplate": "https://marginalia-search.com/search?query=&s&newfilter=true",
+      "defaultSelected": false
+    },
     {
       "displayName": "SearXNG (Random)",
       "shortcut": "SearXNG",
-      "urlTemplate": "https://searx.neocities.org/?q=%s"
+      "urlTemplate": "https://searx.neocities.org/?q=%s",
+      "defaultSelected": false
     }   
     
   ]

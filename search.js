@@ -113,8 +113,11 @@ function populateDropdown() {
     }).join('');
 }
 // ---- Search flow ----
+function getDefaultEnabledShortcuts() {
+    return allEngines.filter(function(e) { return e.defaultSelected !== false; }).map(function(e) { return e.shortcut; });
+}
 function executeSearch(query, specificEngine) {
-    var enabledShortcuts = getEnabledEngines() || allEngines.map(function(e) { return e.shortcut; });
+    var enabledShortcuts = getEnabledEngines() || getDefaultEnabledShortcuts();
     var enabledEngines = allEngines.filter(function(e) { return enabledShortcuts.includes(e.shortcut); });
     var selectedEngine = specificEngine || null;
     if (!selectedEngine && query.startsWith('!')) {
@@ -170,7 +173,7 @@ function openSettingsModal(isFirstTime) {
     title.textContent = isFirstTime
         ? 'Welcome! Configure Your Search Engines'
         : 'Configure Search Engines';
-    var enabled = getEnabledEngines() || allEngines.map(function(e) { return e.shortcut; });
+    var enabled = getEnabledEngines() || getDefaultEnabledShortcuts();
     renderEngineCheckboxes('engineList', allEngines, enabled);
     showModal('settingsOverlay');
 }
