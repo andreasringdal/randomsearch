@@ -1,19 +1,88 @@
 {
   "engines": [
     {
-      "id": "mwbl",
-      "name": "Mwbl",
+      "displayName": "Google",
+      "shortcut": "g",
+      "urlTemplate": "https://www.google.com/search?q=%s"
+    },
+    {
+      "displayName": "Bing",
+      "shortcut": "b",
+      "urlTemplate": "https://www.bing.com/search?q=%s"
+    },
+    {
+      "displayName": "Bing copilot",
+      "shortcut": "bc",
+      "urlTemplate": "https://www.bing.com/search?showconv=1&sendquery=1&q=%s"
+    },
+    {
+      "displayName": "Brave Search",
+      "shortcut": "br",
+      "urlTemplate": "https://search.brave.com/search?q=%s"
+    },
+    {
+      "displayName": "DuckDuckGo",
+      "shortcut": "d",
+      "urlTemplate": "https://duckduckgo.com/?q=%s"
+    },
+    {
+      "displayName": "Ecosia",
+      "shortcut": "e",
+      "urlTemplate": "https://www.ecosia.org/search?q=%s"
+    },
+    {
+      "displayName": "Qwant",
+      "shortcut": "q",
+      "urlTemplate": "https://www.qwant.com/?q=%s"
+    },    
+    {
+      "displayName": "Startpage",
+      "shortcut": "s",
+      "urlTemplate": "https://www.startpage.com/do/search?q=%s"
+    },
+    {
+      "displayName": "ChatGPT",
+      "shortcut": "c",
+      "urlTemplate": "https://chatgpt.com/?q=%s"
+    },
+    {
+      "displayName": "Perplexity",
+      "shortcut": "p",
+      "urlTemplate": "https://www.perplexity.ai/?q=%s"
+    },
+    {
+      "displayName": "Andi search",
+      "shortcut": "a",
+      "urlTemplate": "https://andisearch.com?q=%s"
+    },
+    {
+      "displayName": "Claude",
+      "shortcut": "Claude",
+      "urlTemplate": "https://claude.ai/new?q=%s"
+    },
+    {
+      "displayName": "Mistral",
+      "shortcut": "Mistral",
+      "urlTemplate": "https://chat.mistral.ai/chat?q=%s"
+    } ,
+    {
+      "displayName": "mwmbl",
+      "shortcut": "mwmbl",
+      "urlTemplate": "https://mwmbl.org/?q=%s",
       "defaultSelected": false
     },
     {
-      "id": "Margnalia",
-      "name": "Margnalia",
+      "displayName": "Margnalia",
+      "shortcut": "Margnalia",
+      "urlTemplate": "https://marginalia-search.com/search?query=&s&newfilter=true",
       "defaultSelected": false
     },
     {
-      "id": "SearXNG",
-      "name": "SearXNG",
+      "displayName": "SearXNG (Random)",
+      "shortcut": "SearXNG",
+      "urlTemplate": "https://searx.neocities.org/?q=%s",
       "defaultSelected": false
-    }
+    }   
+    
   ]
 }

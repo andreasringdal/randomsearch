@@ -1,0 +1,9 @@
+<OpenSearchDescription
+  xmlns="http://a9.com/-/spec/opensearch/1.1/"
+  xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+    <ShortName>Random Search</ShortName>
+    <Description>Random Search - A privacy-focused search engine that randomly selects from multiple search providers</Description>
+    <InputEncoding>UTF-8</InputEncoding>
+    <Image height="16" width="16" type="image/x-icon">https://andreasringdal.github.io/randomsearch/favicon.svg</Image>
+    <Url type="text/html" template="https://andreasringdal.github.io/randomsearch/?q={searchTerms}"/>
+</OpenSearchDescription> 
