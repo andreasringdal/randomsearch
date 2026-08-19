@@ -25,6 +25,7 @@ Then open `http://localhost:8080/` in a browser.
 | `engines.json` | Search engine definitions (displayName, shortcut, urlTemplate) |
 | `opensearch.xml` | OpenSearch description for browser integration |
 | `favicon.svg` | SVG favicon |
+| `vessels.html` | Vessel tracking page using VesselFinder AIS map — displays real-time ship positions for the "Arriva Ahipping" fleet. Configurable via JS variables (fleet key, fleet name, timespan, center coordinates, zoom level). |
 
 ### Caveats
 
